@@ -52,3 +52,5 @@ components.html(scripts_html)
 components.html(ar_html.format("https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean_0.2.glb", "3D model"), width = 600, height = 600)
 
 components.html(ar_html.format("static/sl_clean_0.2.glb", "3D model"), width = 600, height = 600)
+
+st.markdown(ar_html.format("static/sl_clean_0.2.glb", "3D model"), unsafe_allow_html=False)
