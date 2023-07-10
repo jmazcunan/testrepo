@@ -29,17 +29,26 @@ scripts_html = """<script type="module"
   src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js">
 </script>
 """
-
 ar_html = """<model-viewer src=”{}” 
               ar
               alt=”{}”>
 </model-viewer>
 """
 
+#https://developers.google.com/ar/develop/webxr/model-viewer?hl=es-419
+scripts_html = """<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>"""
+
+
+ar_html = """<model-viewer src="{}"
+              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+              alt="{}"
+              ar
+              auto-rotate
+              camera-controls></model-viewer>"""
 
 components.html(scripts_html)
 
 
-#components.html(ar_html.format("https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean_0.2.glb", "3D model"))
+components.html(ar_html.format("https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean_0.2.glb", "3D model"), width = 600, height = 600)
 
 components.html(ar_html.format("static/sl_clean_0.2.glb", "3D model"), width = 600, height = 600)
