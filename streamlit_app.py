@@ -1,4 +1,4 @@
-mimport streamlit as st
+import streamlit as st
 
 st.write("AR viewer")
 
