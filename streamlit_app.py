@@ -30,9 +30,7 @@ scripts_html = """<script type="module"
 </script>
 """
 
-ar_html = """components.html(scripts_html)
-
-<model-viewer src=”{}” 
+ar_html = """<model-viewer src=”{}” 
               ar
               alt=”{}”>
 </model-viewer>
