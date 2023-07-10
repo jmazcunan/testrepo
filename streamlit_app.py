@@ -21,9 +21,7 @@ components.html("""<a href="intent://arvr.google.com/scene-viewer/1.0?file=https
 components.html("""<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/jmazcunan/testrepo/main/copa_superliga2.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Copa SL</a>
 """)
 
-scripts_html = 
-"""
-<script type="module"
+scripts_html = """<script type="module"
   src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer.js">
 </script>
 
