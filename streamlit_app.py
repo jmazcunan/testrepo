@@ -29,10 +29,12 @@ scripts_html = """<script type="module"
   src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js">
 </script>
 """
-ar_html = """<model-viewer src=”{}” 
+ar_html = """<div>
+<model-viewer src=”{}” 
               ar
               alt=”{}”>
 </model-viewer>
+</div>
 """
 
 #https://developers.google.com/ar/develop/webxr/model-viewer?hl=es-419
