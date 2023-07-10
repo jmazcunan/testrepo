@@ -49,7 +49,7 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
         <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
     </div>
 </model-viewer>
-"""
+""")
 
 
 
