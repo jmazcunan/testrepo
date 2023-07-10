@@ -38,39 +38,11 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
 
 
 
+components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-scripts_html = """<script type="module"
-  src="https://unpkg.com/@google/model-viewer@3.1.1/dist/model-viewer.js">
-</script>
-
-<script nomodule
-  src="https://unpkg.com/@google/model-viewer@0.3.1/dist/model-viewer-legacy.js">
-</script>
-"""
-ar_html = """<div>
-<model-viewer src=”{}” 
-              ar
-              alt=”{}”>
-</model-viewer>
-</div>
-"""
-
-#https://developers.google.com/ar/develop/webxr/model-viewer?hl=es-419
-scripts_html = """<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>"""
-
-
-ar_html = """<model-viewer src="{}"
+<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
               ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-              alt="{}"
+              alt="A 3D model of an astronaut"
               ar
               auto-rotate
-              camera-controls></model-viewer>"""
-
-components.html(scripts_html)
-
-
-components.html(ar_html.format("https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean_0.2.glb", "3D model"), width = 600, height = 600)
-
-components.html(ar_html.format("static/sl_clean_0.2.glb", "3D model"), width = 600, height = 600)
-
-st.markdown(ar_html.format("static/sl_clean_0.2.glb", "3D model"), unsafe_allow_html=False)
+              camera-controls></model-viewer>""")
