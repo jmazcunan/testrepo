@@ -29,7 +29,7 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
 </head>
 <body>
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean_0.2.glb"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean_0.2_met.glb"
               ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/sl_clean.usdz"
               alt="A 3D model of an astronaut"
               ar
