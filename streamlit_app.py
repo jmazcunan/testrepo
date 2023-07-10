@@ -38,11 +38,11 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
 
 
 
-components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+#components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-              alt="A 3D model of an astronaut"
-              ar
-              auto-rotate
-              camera-controls></model-viewer>""")
+#<model-viewer src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
+#              ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+#              alt="A 3D model of an astronaut"
+#              ar
+#              auto-rotate
+#              camera-controls></model-viewer>""")
