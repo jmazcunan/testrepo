@@ -22,7 +22,7 @@ components.html("""<a href="intent://arvr.google.com/scene-viewer/1.0?file=https
 """)
 
 scripts_html = """<script type="module"
-  src="https://unpkg.com/@google/model-viewer@3.1.1/dist/model-viewer.js.map">
+  src="https://unpkg.com/@google/model-viewer@3.1.1/dist/model-viewer.js">
 </script>
 
 <script nomodule
