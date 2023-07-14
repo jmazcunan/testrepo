@@ -216,10 +216,6 @@ with tab2:
   
 with tab3:
   components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-
-
-
 <style>
 model-viewer {
   width: 350px;
@@ -251,6 +247,50 @@ model-viewer {
 
 <model-viewer src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
               alt="Robot"
+              ar
+              auto-rotate
+              camera-controls>
+              <button class="hotspot" slot="hotspot-hand" data-surface="13 0 62 64 65 0.764 0.125 0.111">
+              
+                <div class="annotation">This hotspot disappears completely</div>
+              </button>
+  </model-viewer>""", width=500, height=800)
+
+  components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+model-viewer {
+  width: 350px;
+  height: 600px;
+}
+.hotspot{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: blue;
+    box-sizing: border-box;
+    pointer-events: none;
+  }
+
+  .hotspot[slot="hotspot-hand"]{
+    --min-hotspot-opacity: 0;
+    background-color: red;
+  }
+  .annotation{
+    background-color: #888888;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+    padding: 10px;
+</style>
+
+
+<model-viewer src="https://modelviewer.dev/shared-assets/models/RobotExpressive.glb"
+              alt="Robot"
+              autoplay
+              scale="0.2 0.2 0.2" 
+              shadow-intensity="1"
               ar
               auto-rotate
               camera-controls>
