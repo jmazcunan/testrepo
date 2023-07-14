@@ -43,7 +43,7 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
 
 
 components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<model-viewer id="animation-demo" autoplay ar ar-modes="webxr" scale="0.01 0.01 0.01" camera-orbit="90deg auto auto" shadow-intensity="1" camera-controls touch-action="pan-y" src="../../shared-assets/models/Horse.glb" alt="A 3D model of a horse galloping.">
+<model-viewer id="animation-demo" autoplay ar ar-modes="webxr" scale="0.01 0.01 0.01" camera-orbit="90deg auto auto" shadow-intensity="1" camera-controls touch-action="pan-y" src="https://modelviewer.dev/shared-assets/models/Horse.glb" alt="A 3D model of a horse galloping.">
   <div slot="hotspot-nose" class="anchor" data-surface="0 0 228 113 111 0.217 0.341 0.442"></div>
   <div slot="hotspot-hoof" class="anchor" data-surface="0 0 752 733 735 0.132 0.379 0.489"></div>
   <div slot="hotspot-tail" class="anchor" data-surface="0 0 220 221 222 0.405 0.061 0.534"></div>
@@ -100,6 +100,10 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
   });
 </script>
 <style>
+model-viewer {
+  width: 350px;
+  height: 600px;
+}
   .anchor{
     display: none;
   }
