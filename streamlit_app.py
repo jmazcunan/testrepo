@@ -101,8 +101,8 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
 </script>
 <style>
 model-viewer {
-  width: 350px;
-  height: 600px;
+  width: 1000px;
+  height: 1000px;
 }
   .anchor{
     display: none;
