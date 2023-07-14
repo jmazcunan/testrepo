@@ -214,7 +214,7 @@ with tab2:
 </model-viewer>
   """, width=600, height=600)
   
-with tab1:
+with tab3:
   components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 
