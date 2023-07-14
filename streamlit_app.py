@@ -161,7 +161,7 @@ with tab1:
   """, width=1000, height=1000)
 
 
-with tab1:
+with tab2:
 
   components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
@@ -204,7 +204,7 @@ with tab1:
     display: none;
   }
 </style>
-<model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y" src="../../shared-assets/models/Astronaut.glb" poster="../../assets/poster-astronaut.webp" shadow-intensity="1" alt="A 3D model of an astronaut.">
+<model-viewer id="hotspot-demo" ar ar-modes="webxr" camera-controls touch-action="pan-y" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" poster="https://modelviewer.dev/assets/poster-astronaut.webp" shadow-intensity="1" alt="A 3D model of an astronaut.">
   <button class="hotspot" slot="hotspot-visor" data-position="0 1.75 0.35" data-normal="0 0 1"></button>
   <button class="hotspot" slot="hotspot-hand" data-position="-0.54 0.93 0.1" data-normal="-0.73 0.05 0.69">
     <div class="annotation">This hotspot disappears completely</div>
