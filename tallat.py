@@ -43,7 +43,7 @@ model-viewer {
 
 
 <model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla02.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/circular_pinilla.usdz"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/circular_pinilla1.usdz"
               alt="model viewer"
               ar
               auto-rotate
@@ -79,7 +79,7 @@ model-viewer {
 
 
 <model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/rectangular.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/rectangular1.usdz"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/rectangular2.usdz"
               alt="model viewer"
               ar
               auto-rotate
