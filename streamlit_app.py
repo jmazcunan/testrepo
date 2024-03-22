@@ -32,10 +32,10 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla_fuente.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/base032.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.usdz"
               alt="model viewer"
-              ar
+              ar ar-placement="wall" 
               auto-rotate
               camera-controls></model-viewer>""", width=350, height=400)
 
