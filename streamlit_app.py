@@ -31,16 +31,13 @@ model-viewer {
 }
 </style>
 
-<title>Page Title</title>
-</head>
-<body>
 
 <model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla_fuente.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/fuente_pinilla.usdc"
-              alt="A 3D model of an astronaut"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/base032.usdz"
+              alt="model viewer"
               ar
               auto-rotate
-              camera-controls></model-viewer>""")
+              camera-controls></model-viewer>""", width=500, height=800)
 
 
 # components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
