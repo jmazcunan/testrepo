@@ -27,7 +27,7 @@ components.html("""<script type="module" src="https://unpkg.com/@google/model-vi
 <style>
 model-viewer {
   width: 350px;
-  height: 600px;
+  height: 400px;
 }
 </style>
 
