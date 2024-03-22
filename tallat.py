@@ -48,3 +48,21 @@ model-viewer {
               ar
               auto-rotate
               camera-controls></model-viewer>""", width=350, height=400)
+
+with tab3:
+  
+  components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+model-viewer {
+  width: 350px;
+  height: 400px;
+}
+</style>
+
+
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/rectangular.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/rectangular.usdz"
+              alt="model viewer"
+              ar
+              auto-rotate
+              camera-controls></model-viewer>""", width=350, height=400)
