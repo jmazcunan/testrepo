@@ -64,8 +64,8 @@ model-viewer {
 }
 </style>
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina03.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina03.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.usdz"
               ar ar-placement="wall" 
                camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>""", width=600, height=600)
 
