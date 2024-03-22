@@ -23,7 +23,16 @@ import streamlit.components.v1 as components
 
 
 
-components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+const modelViewerColor = document.querySelector("model-viewer#color");
+
+document.querySelector('#color-controls').addEventListener('click', (event) => {
+  const colorString = event.target.dataset.color;
+  const [material] = modelViewerColor.model.materials;
+  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+});
+
+</script>
 <style>
 model-viewer {
   width: 350px;
@@ -44,15 +53,7 @@ model-viewer {
     <button data-color="#0000ff">Blue</button>
   </div>
   </model-viewer>
-  <script>
-const modelViewerColor = document.querySelector("model-viewer#color");
-
-document.querySelector('#color-controls').addEventListener('click', (event) => {
-  const colorString = event.target.dataset.color;
-  const [material] = modelViewerColor.model.materials;
-  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
-});
-</script>""", width=350, height=400)
+""", width=350, height=400)
 
 components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
@@ -62,8 +63,8 @@ model-viewer {
 }
 </style>
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.usdz"
               ar ar-placement="wall" 
                camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>""", width=600, height=600)
 
