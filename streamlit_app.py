@@ -37,7 +37,13 @@ model-viewer {
               alt="model viewer"
               ar ar-placement="wall" 
               auto-rotate
-              camera-controls></model-viewer>""", width=350, height=400)
+              camera-controls>
+              <div class="controls" id="color-controls">
+    <button data-color="#ff0000">Red</button>
+    <button data-color="#00ff00">Green</button>
+    <button data-color="#0000ff">Blue</button>
+  </div>
+  </model-viewer>""", width=350, height=400)
 
 
 # components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
