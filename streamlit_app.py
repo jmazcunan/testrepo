@@ -37,7 +37,7 @@ model-viewer {
               alt="model viewer"
               ar
               auto-rotate
-              camera-controls></model-viewer>""", width=500, height=800)
+              camera-controls></model-viewer>""", width=350, height=400)
 
 
 # components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
