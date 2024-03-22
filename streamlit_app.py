@@ -55,6 +55,7 @@ model-viewer {
   </model-viewer>
 """, width=350, height=400)
 
+
 components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
 model-viewer {
