@@ -35,7 +35,7 @@ model-viewer {
 </head>
 <body>
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/fuente_pinilla.glb"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla_fuente.glb"
               ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/fuente_pinilla.usdc"
               alt="A 3D model of an astronaut"
               ar
