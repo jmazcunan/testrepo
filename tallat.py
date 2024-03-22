@@ -42,8 +42,8 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla01.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla01.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla02.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla02.usdz"
               alt="model viewer"
               ar
               auto-rotate
