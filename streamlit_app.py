@@ -43,7 +43,28 @@ model-viewer {
     <button data-color="#00ff00">Green</button>
     <button data-color="#0000ff">Blue</button>
   </div>
-  </model-viewer>""", width=350, height=400)
+  </model-viewer>
+  <script>
+const modelViewerColor = document.querySelector("model-viewer#color");
+
+document.querySelector('#color-controls').addEventListener('click', (event) => {
+  const colorString = event.target.dataset.color;
+  const [material] = modelViewerColor.model.materials;
+  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+});
+</script>""", width=350, height=400)
+
+components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+model-viewer {
+  width: 350px;
+  height: 400px;
+}
+</style>
+
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.usdz"
+              ar ar-placement="wall" camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>""", width=350, height=400)
 
 
 # components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
