@@ -60,8 +60,8 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/cuadrado.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/cuadrado.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/cuadrado1.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/cuadrado1.usdz"
               alt="model viewer"
               ar
               auto-rotate
