@@ -32,7 +32,7 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.glb"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina01.glb"
               ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina.usdz"
               alt="model viewer"
               ar ar-placement="wall" 
