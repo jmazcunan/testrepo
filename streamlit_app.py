@@ -22,52 +22,6 @@ import streamlit.components.v1 as components
 # """)
 
 
-
-components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-const modelViewerColor = document.querySelector("model-viewer#color");
-
-document.querySelector('#color-controls').addEventListener('click', (event) => {
-  const colorString = event.target.dataset.color;
-  const [material] = modelViewerColor.model.materials;
-  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
-});
-
-</script>
-<style>
-model-viewer {
-  width: 350px;
-  height: 400px;
-}
-</style>
-
-
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina03.usdz"
-              alt="model viewer"
-              ar ar-placement="wall" 
-              auto-rotate
-              camera-controls>
-              <div class="controls" id="color-controls">
-    <button data-color="#ff0000">Red</button>
-    <button data-color="#00ff00">Green</button>
-    <button data-color="#0000ff">Blue</button>
-  </div>
-  </model-viewer>
-
-  <script>
-const modelViewerColor = document.querySelector("model-viewer#color");
-
-document.querySelector('#color-controls').addEventListener('click', (event) => {
-  const colorString = event.target.dataset.color;
-  const [material] = modelViewerColor.model.materials;
-  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
-  console.log("changed color")
-});
-</script
-
-""", width=350, height=400)
-
-
 components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
 model-viewer {
@@ -84,34 +38,34 @@ model-viewer {
 
 
 
-components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<style>
-model-viewer {
-  width: 350px;
-  height: 600px;
-}
+# components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+# <style>
+# model-viewer {
+#   width: 350px;
+#   height: 600px;
+# }
 
-</style>
+# </style>
 
 
-<model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar alt="A 3D model of an astronaut">
-  <div class="controls" id="color-controls">
-    <button data-color="#ff0000">Red</button>
-    <button data-color="#00ff00">Green</button>
-    <button data-color="#0000ff">Blue</button>
-  </div>
-</model-viewer>
-<script>
-const modelViewerColor = document.querySelector("model-viewer#color");
+# <model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar alt="A 3D model of an astronaut">
+#   <div class="controls" id="color-controls">
+#     <button data-color="#ff0000">Red</button>
+#     <button data-color="#00ff00">Green</button>
+#     <button data-color="#0000ff">Blue</button>
+#   </div>
+# </model-viewer>
+# <script>
+# const modelViewerColor = document.querySelector("model-viewer#color");
 
-document.querySelector('#color-controls').addEventListener('click', (event) => {
-  const colorString = event.target.dataset.color;
-  const [material] = modelViewerColor.model.materials;
-  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
-});
-</script>
+# document.querySelector('#color-controls').addEventListener('click', (event) => {
+#   const colorString = event.target.dataset.color;
+#   const [material] = modelViewerColor.model.materials;
+#   material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+# });
+# </script>
 
-  </model-viewer>""", width=500, height=800)
+#   </model-viewer>""", width=500, height=800)
 
 
 components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
@@ -126,7 +80,7 @@ model-viewer {
 
 <model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" 
 src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb" 
-ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina04.usdz"
+ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.usdz"
 ar alt="lamina01" ar ar-placement="wall">
 
   <div class="controls" id="color-controls">
