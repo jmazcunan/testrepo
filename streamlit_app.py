@@ -84,7 +84,7 @@ ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina07.usdz
 ar alt="lamina01" ar ar-placement="wall">
 
   <div class="controls" id="color-controls">
-    <button data-color="#ff0000">Red</button>
+    <button data-color="#d90708">Red</button>
     <button data-color="#00ff00">Green</button>
     <button data-color="#0000ff">Blue</button>
   </div>
