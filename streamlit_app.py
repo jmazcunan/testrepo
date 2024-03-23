@@ -124,7 +124,11 @@ model-viewer {
 </style>
 
 
-<model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb" ar alt="lamina01">
+<model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" 
+src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb" 
+ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina03.usdz"
+ar alt="lamina01" ar ar-placement="wall">
+
   <div class="controls" id="color-controls">
     <button data-color="#ff0000">Red</button>
     <button data-color="#00ff00">Green</button>
