@@ -53,6 +53,18 @@ model-viewer {
     <button data-color="#0000ff">Blue</button>
   </div>
   </model-viewer>
+
+  <script>
+const modelViewerColor = document.querySelector("model-viewer#color");
+
+document.querySelector('#color-controls').addEventListener('click', (event) => {
+  const colorString = event.target.dataset.color;
+  const [material] = modelViewerColor.model.materials;
+  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+  console.log("changed color")
+});
+</script
+
 """, width=350, height=400)
 
 
