@@ -99,7 +99,7 @@ document.querySelector('#color-controls').addEventListener('click', (event) => {
 });
 </script>
 
-  </model-viewer>""", width=400, height=400)
+  </model-viewer>""", width=350, height=600)
 
 
 
