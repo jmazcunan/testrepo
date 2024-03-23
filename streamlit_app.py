@@ -76,10 +76,43 @@ model-viewer {
 }
 </style>
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.glb"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb"
               ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.usdz"
               ar ar-placement="wall" 
                camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>""", width=600, height=600)
+
+
+
+
+components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+model-viewer {
+  width: 350px;
+  height: 600px;
+}
+
+</style>
+
+
+<model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" src="https://modelviewer.dev/shared-assets/models/Astronaut.glb" ar alt="A 3D model of an astronaut">
+  <div class="controls" id="color-controls">
+    <button data-color="#ff0000">Red</button>
+    <button data-color="#00ff00">Green</button>
+    <button data-color="#0000ff">Blue</button>
+  </div>
+</model-viewer>
+<script>
+const modelViewerColor = document.querySelector("model-viewer#color");
+
+document.querySelector('#color-controls').addEventListener('click', (event) => {
+  const colorString = event.target.dataset.color;
+  const [material] = modelViewerColor.model.materials;
+  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+});
+</script>
+
+  </model-viewer>""", width=500, height=800)
+
 
 
 # components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
