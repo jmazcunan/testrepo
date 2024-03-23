@@ -80,7 +80,7 @@ model-viewer {
 
 <model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" 
 src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb" 
-ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.usdz"
+ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina04.usdz"
 ar alt="lamina01" ar ar-placement="wall">
 
   <div class="controls" id="color-controls">
@@ -99,7 +99,7 @@ document.querySelector('#color-controls').addEventListener('click', (event) => {
 });
 </script>
 
-  </model-viewer>""", width=500, height=800)
+  </model-viewer>""", width=400, height=400)
 
 
 
