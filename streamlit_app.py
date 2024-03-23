@@ -114,6 +114,36 @@ document.querySelector('#color-controls').addEventListener('click', (event) => {
   </model-viewer>""", width=500, height=800)
 
 
+components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<style>
+model-viewer {
+  width: 350px;
+  height: 600px;
+}
+
+</style>
+
+
+<model-viewer id="color" camera-controls touch-action="pan-y" interaction-prompt="none" src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb" ar alt="lamina01">
+  <div class="controls" id="color-controls">
+    <button data-color="#ff0000">Red</button>
+    <button data-color="#00ff00">Green</button>
+    <button data-color="#0000ff">Blue</button>
+  </div>
+</model-viewer>
+<script>
+const modelViewerColor = document.querySelector("model-viewer#color");
+
+document.querySelector('#color-controls').addEventListener('click', (event) => {
+  const colorString = event.target.dataset.color;
+  const [material] = modelViewerColor.model.materials;
+  material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+});
+</script>
+
+  </model-viewer>""", width=500, height=800)
+
+
 
 # components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
