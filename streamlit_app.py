@@ -22,18 +22,18 @@ import streamlit.components.v1 as components
 # """)
 
 
-components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<style>
-model-viewer {
-  width: 350px;
-  height: 400px;
-}
-</style>
+# components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+# <style>
+# model-viewer {
+#   width: 350px;
+#   height: 400px;
+# }
+# </style>
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.usdz"
-              ar ar-placement="wall" 
-               camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>""", width=600, height=600)
+# <model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina05.glb"
+#               ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/lamina02.usdz"
+#               ar ar-placement="wall" 
+#                camera-controls touch-action="pan-y" alt="A 3D model of some wall art"></model-viewer>""", width=600, height=600)
 
 
 
