@@ -33,6 +33,22 @@ tab1, tab2, tab3 = st.tabs(["Circular", "Cuadrado", "Rectangular"])
 
 with tab1:
   
+#   components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+# <style>
+# model-viewer {
+#   width: 350px;
+#   height: 400px;
+# }
+# </style>
+
+
+# <model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla02.glb"
+#               ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/circular_pinilla1.usdz"
+#               alt="model viewer"
+#               ar
+#               auto-rotate
+#               camera-controls></model-viewer>""", width=350, height=400
+  
   components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 <style>
 model-viewer {
@@ -42,13 +58,13 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/pinilla02.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/circular_pinilla1.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/redondo_smoorf.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/redondo_smoorf.usdz"
               alt="model viewer"
               ar
               auto-rotate
               camera-controls></model-viewer>""", width=350, height=400)
-
+  
 with tab2:
   
   components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
