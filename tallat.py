@@ -1,7 +1,8 @@
 import streamlit as st
 
-st.write("TallaT AR")
+st.title("Tallat Láser")
 
+st.subheader("SMOoORF collection")
 
 import streamlit.components.v1 as components
 
