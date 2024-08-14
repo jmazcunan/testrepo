@@ -59,7 +59,7 @@ model-viewer {
 
 
 <model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/redondo_smoorf.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/redondo_smoorf2.usdz"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/redondo_smoorf_ios.usdz"
               alt="model viewer"
               ar
               auto-rotate
