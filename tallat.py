@@ -22,21 +22,24 @@ import streamlit.components.v1 as components
 # components.html("""<a href="intent://arvr.google.com/scene-viewer/1.0?file=https://raw.githubusercontent.com/jmazcunan/testrepo/main/copa_superliga2.glb#Intent;scheme=https;package=com.google.android.googlequicksearchbox;action=android.intent.action.VIEW;S.browser_fallback_url=https://developers.google.com/ar;end;">Copa SL</a>
 # """)
 def display_3d(model_path):
-  components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-<style>
-model-viewer {
-  width: 350px;
-  height: 400px;
-}
-</style>
+    ios_path = model_path.replace(".glb", ".usdz")
 
+    components.html("""
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+    model-viewer {{
+      width: 350px;
+      height: 400px;
+    }}
+    </style>
 
-<model-viewer src="{model_path}"
-              ios-src="{ios_path}"
-              alt="model viewer"
-              ar
-              auto-rotate
-              camera-controls></model-viewer>""".format(model_path = model_path, ios_path = model_path.replace(".glb",".usdz"), width=350, height=400)
+    <model-viewer src="{model_path}"
+                  ios-src="{ios_path}"
+                  alt="model viewer"
+                  ar
+                  auto-rotate
+                  camera-controls></model-viewer>
+    """.format(model_path=model_path, ios_path=ios_path))
   
 
 
