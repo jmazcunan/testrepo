@@ -45,7 +45,7 @@ def display_3d(model_path):
 
 
 
-components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+#components.html("""<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
 # <model-viewer camera-controls touch-action="pan-y" autoplay ar ar-modes="webxr scene-viewer" scale="0.2 0.2 0.2" shadow-intensity="1" src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/untitled.glb" alt="An animated 3D model of a robot"></model-viewer>""")
 
@@ -59,8 +59,8 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat2.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat2.usdz"
               alt="model viewer"
               ar
               auto-rotate
