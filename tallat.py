@@ -59,8 +59,8 @@ model-viewer {
 </style>
 
 
-<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat_zip.glb"
-              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat_zip.usdz"
+<model-viewer src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat_zip2.glb"
+              ios-src="https://raw.githubusercontent.com/jmazcunan/testrepo/main/zazpiakbat_zip2.usdz"
               alt="model viewer"
               ar
               auto-rotate
